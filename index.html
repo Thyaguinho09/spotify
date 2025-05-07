@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sportify - Sua música, seu jeito</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
+            <h1>🎵 Sportify</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Buscar</a></li>
+                    <li><a href="#">Sua Biblioteca</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="playlist">
+                <h3>Playlists</h3>
+                <ul>
+                    <li><a href="#">Top Brasil</a></li>
+                    <li><a href="#">Relaxar</a></li>
+                    <li><a href="#">Treino</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Conteúdo principal -->
+        <main class="main-content">
+            <header>
+                <h2>Boas-vindas!</h2>
+            </header>
+            <section class="playlist-grid">
+                <div class="card" onclick="playMusic('music/lofi.mp3', 'Lofi Vibes')">
+                    <img src="https://via.placeholder.com/150" alt="Lofi">
+                    <p>Lofi Vibes</p>
+                </div>
+                <div class="card" onclick="playMusic('music/eletronica.mp3', 'Eletrônica')">
+                    <img src="https://via.placeholder.com/150" alt="Eletrônica">
+                    <p>Eletrônica</p>
+                </div>
+                <div class="card" onclick="playMusic('music/rock.mp3', 'Rock Clássico')">
+                    <img src="https://via.placeholder.com/150" alt="Rock">
+                    <p>Rock Clássico</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Player de música -->
+    <footer class="player">
+        <div id="track-info">Nenhuma música tocando</div>
+        <audio id="audio-player" controls></audio>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
